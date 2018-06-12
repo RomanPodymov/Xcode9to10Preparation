@@ -1,2 +1,2 @@
-# Xcode10Migration
-Functions from Xcode 10 beta available in Xcode 9
+# Xcode9to10Preparation
+Provides functions from Xcode 10 in Xcode 9
