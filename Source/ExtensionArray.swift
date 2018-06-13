@@ -1,6 +1,6 @@
 extension Array {
     
-    open func allSatisfy(_ predicate: (Element) throws -> Bool) rethrows -> Bool {
+    public func allSatisfy(_ predicate: (Element) throws -> Bool) rethrows -> Bool {
         
         do {
         
