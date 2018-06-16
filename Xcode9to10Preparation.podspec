@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Xcode9to10Preparation"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "Provides functions from Xcode 10 in Xcode 9"
 
   s.description  = <<-DESC
@@ -13,15 +13,13 @@ Pod::Spec.new do |s|
   s.author       = { "RomanPodymov" => "podymfrombryansk@yandex.ru" }
 
   s.ios.deployment_target = "8.0"
-  s.osx.deployment_target = "10.10"
-  s.watchos.deployment_target = "2.0"
   s.tvos.deployment_target = "9.0"
 
   s.source       = { :git => "https://github.com/RomanPodymov/Xcode9to10Preparation.git", :tag => s.version.to_s }
   s.source_files  = "Source", "Source/**/*.{h,m}"
   s.exclude_files = "Source/Exclude"
 
-  s.swift_version = '4.2'
+  s.swift_version = '4.1'
   s.requires_arc = true
   
 end
