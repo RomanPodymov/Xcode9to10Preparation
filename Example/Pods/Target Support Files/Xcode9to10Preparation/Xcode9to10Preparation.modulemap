@@ -1,0 +1,6 @@
+framework module Xcode9to10Preparation {
+  umbrella header "Xcode9to10Preparation-umbrella.h"
+
+  export *
+  module * { export * }
+}
