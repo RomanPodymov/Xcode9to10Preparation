@@ -12,4 +12,8 @@ extension Array {
             throw error
         }
     }
+
+    public mutating func removeAll(where predicate: (Element) throws -> Bool) rethrows {
+    
+    }
 }
