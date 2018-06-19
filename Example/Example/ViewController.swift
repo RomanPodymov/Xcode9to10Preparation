@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import Xcode9to10Preparation
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    
+        let testingValue = [1, 2, 3].allSatisfy { $0 > 0 }
+        print(testingValue)
     }
 
     override func didReceiveMemoryWarning() {
