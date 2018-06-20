@@ -1,16 +1,16 @@
 PODS:
-  - Xcode9to10Preparation (0.0.3)
+  - Xcode9to10Preparation (0.0.4)
 
 DEPENDENCIES:
-  - Xcode9to10Preparation
+  - Xcode9to10Preparation (from `..`)
 
-SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - Xcode9to10Preparation
+EXTERNAL SOURCES:
+  Xcode9to10Preparation:
+    :path: ".."
 
 SPEC CHECKSUMS:
-  Xcode9to10Preparation: 9a4f6c016a3f294fe8f55b48ec9a48e38004a9c9
+  Xcode9to10Preparation: 98acb98ea8cc43ba177341f8734749fbe499a810
 
-PODFILE CHECKSUM: 99c5deda0bf084371a3f2792327c26e24cd4fca6
+PODFILE CHECKSUM: a85bb9d5b9cba0dfb75f78ceee004e54fce83e43
 
 COCOAPODS: 1.5.3
