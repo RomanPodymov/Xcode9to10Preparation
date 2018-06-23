@@ -5,6 +5,8 @@
 //  Created by Roman Podymov on 21.06.18.
 //
 
-protocol CaseIterable {
-	static var allCases: [Self] { get }
+public protocol CaseIterable {
+    associatedtype AllCases : Collection where Self.AllCases.Element == Self
+
+    static var allCases: Self.AllCases { get }
 }
