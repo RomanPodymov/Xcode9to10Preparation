@@ -32,7 +32,10 @@ public extension Array {
     }
     
     public func lastIndex(where predicate: (Element) throws -> Bool) rethrows -> Int? {
-        return try self.reversed().firstIndex(where: predicate)
+        guard let indexInReversedArray = try self.reversed().firstIndex(where: predicate) else {
+            return nil
+        }
+        return self.count - indexInReversedArray - 1
     }
     
     func starts<PossiblePrefix>(with possiblePrefix: PossiblePrefix, by areEquivalent: (Element, PossiblePrefix.Element) throws -> Bool) rethrows -> Bool where PossiblePrefix : Sequence {
