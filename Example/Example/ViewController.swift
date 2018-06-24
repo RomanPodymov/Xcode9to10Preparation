@@ -21,6 +21,23 @@ class ViewController: UIViewController {
         var testingValue2 = [1, 10, 4, 20, 6, 7, 30, 8, 2]
         testingValue2.removeAll(where: { $0 < 10 })
         print(testingValue2)
+        
+        if let testingValue3 = [1, 4, 10, 4, 1, 10, 4, 5, 1, 4, 5].firstIndex(where: { $0 == 4 }) {
+            print(testingValue3)
+        }
+        
+        if let testingValue4 = [1, 4, 10, 4, 1, 10, 4, 5, 1, 4, 5].lastIndex(where: { $0 == 4 }) {
+            print(testingValue4)
+        }
+        
+        let testingValue5 = [1, 10, 20, 5, 70, 90].starts(with: [1, 10, 20, 5, 70]) { $0 == $1 }
+        print(testingValue5)
+        
+        let testingValue6 = [1, 10, 20, 5].starts(with: [1, 10, 20, 5, 70]) { $0 == $1 }
+        print(testingValue6)
+        
+        let testingValue7 = [1, 10, 20, 5, 70, 90].starts(with: [1, 10, 20, 51, 70]) { $0 == $1 }
+        print(testingValue7)
     }
 
     override func didReceiveMemoryWarning() {
