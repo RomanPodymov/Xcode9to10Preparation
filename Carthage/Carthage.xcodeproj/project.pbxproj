@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		9EC5BF6C20E36E5F006DF7EA /* Carthage.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EC5BF6A20E36E5E006DF7EA /* Carthage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9EC5BF7620E36ED4006DF7EA /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5BF7220E36ED3006DF7EA /* Random.swift */; };
+		9EC5BF7720E36ED4006DF7EA /* CaseIterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5BF7320E36ED4006DF7EA /* CaseIterable.swift */; };
+		9EC5BF7820E36ED4006DF7EA /* ExtensionArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5BF7420E36ED4006DF7EA /* ExtensionArray.swift */; };
+		9EC5BF7920E36ED4006DF7EA /* ExtensionBool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5BF7520E36ED4006DF7EA /* ExtensionBool.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9EC5BF6720E36E5E006DF7EA /* Carthage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Carthage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EC5BF6A20E36E5E006DF7EA /* Carthage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Carthage.h; sourceTree = "<group>"; };
 		9EC5BF6B20E36E5F006DF7EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EC5BF7220E36ED3006DF7EA /* Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Random.swift; path = ../Source/Random.swift; sourceTree = "<group>"; };
+		9EC5BF7320E36ED4006DF7EA /* CaseIterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CaseIterable.swift; path = ../Source/CaseIterable.swift; sourceTree = "<group>"; };
+		9EC5BF7420E36ED4006DF7EA /* ExtensionArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExtensionArray.swift; path = ../Source/ExtensionArray.swift; sourceTree = "<group>"; };
+		9EC5BF7520E36ED4006DF7EA /* ExtensionBool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExtensionBool.swift; path = ../Source/ExtensionBool.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +38,10 @@
 		9EC5BF5D20E36E5E006DF7EA = {
 			isa = PBXGroup;
 			children = (
+				9EC5BF7320E36ED4006DF7EA /* CaseIterable.swift */,
+				9EC5BF7420E36ED4006DF7EA /* ExtensionArray.swift */,
+				9EC5BF7520E36ED4006DF7EA /* ExtensionBool.swift */,
+				9EC5BF7220E36ED3006DF7EA /* Random.swift */,
 				9EC5BF6920E36E5E006DF7EA /* Carthage */,
 				9EC5BF6820E36E5E006DF7EA /* Products */,
 			);
@@ -130,6 +142,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EC5BF7620E36ED4006DF7EA /* Random.swift in Sources */,
+				9EC5BF7720E36ED4006DF7EA /* CaseIterable.swift in Sources */,
+				9EC5BF7820E36ED4006DF7EA /* ExtensionArray.swift in Sources */,
+				9EC5BF7920E36ED4006DF7EA /* ExtensionBool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
