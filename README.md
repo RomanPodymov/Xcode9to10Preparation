@@ -3,6 +3,7 @@
 Provides functions from Xcode 10 in Xcode 9.
 
 [![Cocoapods Compatible](https://img.shields.io/cocoapods/v/Xcode9to10Preparation.svg)](https://cocoapods.org/pods/Xcode9to10Preparation)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/RomanPodymov/Xcode9to10Preparation)
 
 ## Contents
 
