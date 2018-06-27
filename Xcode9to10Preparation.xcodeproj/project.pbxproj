@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9EB0136A20E375B800778EAF /* Xcode9to10Preparation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EB0136820E375B800778EAF /* Xcode9to10Preparation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9EB0137420E376DE00778EAF /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB0137020E376DE00778EAF /* Random.swift */; };
+		9EB0137520E376DE00778EAF /* CaseIterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB0137120E376DE00778EAF /* CaseIterable.swift */; };
+		9EB0137620E376DE00778EAF /* ExtensionArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB0137220E376DE00778EAF /* ExtensionArray.swift */; };
+		9EB0137720E376DE00778EAF /* ExtensionBool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB0137320E376DE00778EAF /* ExtensionBool.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9EB0136520E375B800778EAF /* Xcode9to10Preparation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Xcode9to10Preparation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9EB0136820E375B800778EAF /* Xcode9to10Preparation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Xcode9to10Preparation.h; sourceTree = "<group>"; };
-		9EB0136920E375B800778EAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EB0137020E376DE00778EAF /* Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Random.swift; path = Source/Random.swift; sourceTree = "<group>"; };
+		9EB0137120E376DE00778EAF /* CaseIterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CaseIterable.swift; path = Source/CaseIterable.swift; sourceTree = "<group>"; };
+		9EB0137220E376DE00778EAF /* ExtensionArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExtensionArray.swift; path = Source/ExtensionArray.swift; sourceTree = "<group>"; };
+		9EB0137320E376DE00778EAF /* ExtensionBool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExtensionBool.swift; path = Source/ExtensionBool.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,7 +35,10 @@
 		9EB0135B20E375B800778EAF = {
 			isa = PBXGroup;
 			children = (
-				9EB0136720E375B800778EAF /* Xcode9to10Preparation */,
+				9EB0137120E376DE00778EAF /* CaseIterable.swift */,
+				9EB0137220E376DE00778EAF /* ExtensionArray.swift */,
+				9EB0137320E376DE00778EAF /* ExtensionBool.swift */,
+				9EB0137020E376DE00778EAF /* Random.swift */,
 				9EB0136620E375B800778EAF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,15 +51,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9EB0136720E375B800778EAF /* Xcode9to10Preparation */ = {
-			isa = PBXGroup;
-			children = (
-				9EB0136820E375B800778EAF /* Xcode9to10Preparation.h */,
-				9EB0136920E375B800778EAF /* Info.plist */,
-			);
-			path = Xcode9to10Preparation;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -59,7 +58,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EB0136A20E375B800778EAF /* Xcode9to10Preparation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +128,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EB0137420E376DE00778EAF /* Random.swift in Sources */,
+				9EB0137520E376DE00778EAF /* CaseIterable.swift in Sources */,
+				9EB0137620E376DE00778EAF /* ExtensionArray.swift in Sources */,
+				9EB0137720E376DE00778EAF /* ExtensionBool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
