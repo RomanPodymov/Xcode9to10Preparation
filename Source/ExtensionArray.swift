@@ -5,6 +5,8 @@
 //  Created by Roman Podymov on 21.06.18.
 //
 
+#if swift(>=4.2)
+#else
 public extension Array {
     public func allSatisfy(_ predicate: (Element) throws -> Bool) rethrows -> Bool {
         return try !self.contains {
@@ -64,3 +66,4 @@ fileprivate extension Sequence {
         }
     }
 }
+#endif

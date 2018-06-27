@@ -7,6 +7,8 @@
 
 import Darwin
 
+#if swift(>=4.2)
+#else
 public protocol RandomNumberGenerator {
     mutating func next() -> UInt64
 
@@ -38,3 +40,4 @@ public extension FixedWidthInteger {
         return Self(Random.default.next())
     }
 }
+#endif
