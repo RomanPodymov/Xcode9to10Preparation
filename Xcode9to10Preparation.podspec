@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
 
   s.name         = "Xcode9to10Preparation"
-  s.version      = "0.0.8"
+  s.version      = "0.0.9"
   s.summary      = "Provides functions from Xcode 10 in Xcode 9"
 
   s.description  = <<-DESC
-                   If you found some interesting functions (allSatisfy) in Xcode 10 you can use them right now in Xcode 9 with this library
+                   If you found some interesting functions, protocols, enumerations, classes or sctuctures in Xcode 10 you can use them right now in Xcode 9 with this library
                    DESC
 
   s.homepage     = "https://github.com/RomanPodymov/Xcode9to10Preparation"
