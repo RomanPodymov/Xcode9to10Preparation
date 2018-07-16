@@ -13,7 +13,18 @@
 		9E21E10420D9A87B00208198 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E21E10220D9A87B00208198 /* Main.storyboard */; };
 		9E21E10620D9A88000208198 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E21E10520D9A88000208198 /* Assets.xcassets */; };
 		9E21E10920D9A88000208198 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E21E10720D9A88000208198 /* LaunchScreen.storyboard */; };
+		9E3BF8C620FD211500382D7E /* ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3BF8C520FD211500382D7E /* ExampleUITests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9E3BF8C820FD211500382D7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E21E0F320D9A87B00208198 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E21E0FA20D9A87B00208198;
+			remoteInfo = Example;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		40C6372AC5930F356B5A2D13 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -26,6 +37,9 @@
 		9E21E10520D9A88000208198 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E21E10820D9A88000208198 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E21E10A20D9A88000208198 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E3BF8C320FD211500382D7E /* ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E3BF8C520FD211500382D7E /* ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleUITests.swift; sourceTree = "<group>"; };
+		9E3BF8C720FD211500382D7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +48,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7746B8BFEE63EC0898EC4920 /* Pods_Example.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E3BF8C020FD211500382D7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				9E21E0FD20D9A87B00208198 /* Example */,
+				9E3BF8C420FD211500382D7E /* ExampleUITests */,
 				9E21E0FC20D9A87B00208198 /* Products */,
 				52FBC872D510C18C6CF04FA4 /* Pods */,
 				1D59639C47C3483186A4C8B6 /* Frameworks */,
@@ -71,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				9E21E0FB20D9A87B00208198 /* Example.app */,
+				9E3BF8C320FD211500382D7E /* ExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,6 +109,15 @@
 				9E21E10A20D9A88000208198 /* Info.plist */,
 			);
 			path = Example;
+			sourceTree = "<group>";
+		};
+		9E3BF8C420FD211500382D7E /* ExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9E3BF8C520FD211500382D7E /* ExampleUITests.swift */,
+				9E3BF8C720FD211500382D7E /* Info.plist */,
+			);
+			path = ExampleUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +142,24 @@
 			productReference = 9E21E0FB20D9A87B00208198 /* Example.app */;
 			productType = "com.apple.product-type.application";
 		};
+		9E3BF8C220FD211500382D7E /* ExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E3BF8CC20FD211600382D7E /* Build configuration list for PBXNativeTarget "ExampleUITests" */;
+			buildPhases = (
+				9E3BF8BF20FD211500382D7E /* Sources */,
+				9E3BF8C020FD211500382D7E /* Frameworks */,
+				9E3BF8C120FD211500382D7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9E3BF8C920FD211500382D7E /* PBXTargetDependency */,
+			);
+			name = ExampleUITests;
+			productName = ExampleUITests;
+			productReference = 9E3BF8C320FD211500382D7E /* ExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -122,6 +172,10 @@
 				TargetAttributes = {
 					9E21E0FA20D9A87B00208198 = {
 						CreatedOnToolsVersion = 9.4;
+					};
+					9E3BF8C220FD211500382D7E = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 9E21E0FA20D9A87B00208198;
 					};
 				};
 			};
@@ -139,6 +193,7 @@
 			projectRoot = "";
 			targets = (
 				9E21E0FA20D9A87B00208198 /* Example */,
+				9E3BF8C220FD211500382D7E /* ExampleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -151,6 +206,13 @@
 				9E21E10920D9A88000208198 /* LaunchScreen.storyboard in Resources */,
 				9E21E10620D9A88000208198 /* Assets.xcassets in Resources */,
 				9E21E10420D9A87B00208198 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E3BF8C120FD211500382D7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,7 +267,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9E3BF8BF20FD211500382D7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E3BF8C620FD211500382D7E /* ExampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9E3BF8C920FD211500382D7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9E21E0FA20D9A87B00208198 /* Example */;
+			targetProxy = 9E3BF8C820FD211500382D7E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9E21E10220D9A87B00208198 /* Main.storyboard */ = {
@@ -379,6 +457,42 @@
 			};
 			name = Release;
 		};
+		9E3BF8CA20FD211500382D7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = romanpodymov.ExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Example;
+			};
+			name = Debug;
+		};
+		9E3BF8CB20FD211500382D7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = romanpodymov.ExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Example;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -396,6 +510,15 @@
 			buildConfigurations = (
 				9E21E10E20D9A88000208198 /* Debug */,
 				9E21E10F20D9A88000208198 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E3BF8CC20FD211600382D7E /* Build configuration list for PBXNativeTarget "ExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E3BF8CA20FD211500382D7E /* Debug */,
+				9E3BF8CB20FD211500382D7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
