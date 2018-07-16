@@ -35,9 +35,4 @@ public struct Random: RandomNumberGenerator {
     }
 }
 
-public extension FixedWidthInteger {
-    static func random(in range: Range<Self>) -> Self {
-        return Self(Random.default.next())
-    }
-}
 #endif
