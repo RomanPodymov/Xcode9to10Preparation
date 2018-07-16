@@ -3,4 +3,5 @@ osx_image: xcode9.4
 xcode_workspace: Example/Example.xcworkspace
 xcode_scheme: Example
 podfile: Example/Podfile
-script: xcodebuild clean build -sdk iphonesimulator -workspace Example/Example.xcworkspace -scheme Example CODE_SIGNING_REQUIRED=NO
+script: 
+  - xcodebuild clean build -sdk iphonesimulator -workspace Example/Example.xcworkspace -scheme Example CODE_SIGNING_REQUIRED=NO
