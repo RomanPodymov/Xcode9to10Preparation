@@ -9,4 +9,6 @@ import Foundation
 
 #if swift(>=4.2)
 #else
-public extension Array {
+public extension ArraySlice {
+}
+#endif
