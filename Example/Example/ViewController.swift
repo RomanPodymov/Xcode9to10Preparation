@@ -41,8 +41,23 @@ class ViewController: UIViewController {
     
     private func testExtensionArraySlice() {
         
-        let testingValue1 = [1, 2, 3, 4].dropLast().allSatisfy { $0 > 0 }
+        let testingValue1 = [1, 2, 3].dropLast().allSatisfy { $0 > 0 }
         print(testingValue1)
+        
+        var testingValue2 = [1, 10, 4, 20, 6, 7, 30, 8, 2].dropLast()
+        testingValue2.removeAll(where: { $0 < 10 })
+        print(testingValue2)
+        
+        if let testingValue3 = [1, 4, 10, 4, 1, 10, 4, 5, 1, 4, 5].dropLast().firstIndex(where: { $0 == 4 }) {
+            print(testingValue3)
+        }
+        
+        if let testingValue4 = [1, 4, 10, 4, 1, 10, 4, 5, 1, 4, 5].dropLast().lastIndex(where: { $0 == 4 }) {
+            print(testingValue4)
+        }
+        
+        let testingValue5 = [1, 10, 20, 5, 70, 90].dropLast().starts(with: [1, 10, 20, 5, 70]) { $0 == $1 }
+        print(testingValue5)
     }
     
     override func didReceiveMemoryWarning() {
