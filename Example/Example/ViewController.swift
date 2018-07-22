@@ -13,8 +13,13 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    
+        
+        testExtensionArray()
+        testExtensionArraySlice()
+    }
+
+    private func testExtensionArray() {
+        
         let testingValue1 = [1, 2, 3].allSatisfy { $0 > 0 }
         print(testingValue1)
         
@@ -32,14 +37,29 @@ class ViewController: UIViewController {
         
         let testingValue5 = [1, 10, 20, 5, 70, 90].starts(with: [1, 10, 20, 5, 70]) { $0 == $1 }
         print(testingValue5)
-        
-        let testingValue6 = [1, 10, 20, 5].starts(with: [1, 10, 20, 5, 70]) { $0 == $1 }
-        print(testingValue6)
-        
-        let testingValue7 = [1, 10, 20, 5, 70, 90].starts(with: [1, 10, 20, 51, 70]) { $0 == $1 }
-        print(testingValue7)
     }
-
+    
+    private func testExtensionArraySlice() {
+        
+        let testingValue1 = [1, 2, 3].dropLast().allSatisfy { $0 > 0 }
+        print(testingValue1)
+        
+        var testingValue2 = [1, 10, 4, 20, 6, 7, 30, 8, 2].dropLast()
+        testingValue2.removeAll(where: { $0 < 10 })
+        print(testingValue2)
+        
+        if let testingValue3 = [1, 4, 10, 4, 1, 10, 4, 5, 1, 4, 5].dropLast().firstIndex(where: { $0 == 4 }) {
+            print(testingValue3)
+        }
+        
+        if let testingValue4 = [1, 4, 10, 4, 1, 10, 4, 5, 1, 4, 5].dropLast().lastIndex(where: { $0 == 4 }) {
+            print(testingValue4)
+        }
+        
+        let testingValue5 = [1, 10, 20, 5, 70, 90].dropLast().starts(with: [1, 10, 20, 5, 70]) { $0 == $1 }
+        print(testingValue5)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

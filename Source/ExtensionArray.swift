@@ -40,7 +40,7 @@ public extension Array {
         return self.count - indexInReversedArray - 1
     }
     
-    func starts<PossiblePrefix>(with possiblePrefix: PossiblePrefix, by areEquivalent: (Element, PossiblePrefix.Element) throws -> Bool) rethrows -> Bool where PossiblePrefix : Sequence {
+    public func starts<PossiblePrefix>(with possiblePrefix: PossiblePrefix, by areEquivalent: (Element, PossiblePrefix.Element) throws -> Bool) rethrows -> Bool where PossiblePrefix : Sequence {
         guard let possiblePrefixElementsCount = try? possiblePrefix.count() else {
             return false
         }
