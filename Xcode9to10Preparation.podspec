@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Xcode9to10Preparation"
-  s.version      = "0.0.12"
+  s.version      = "0.0.15"
   s.summary      = "Provides functions from Xcode 10 in Xcode 9"
  
   s.deprecated   = true
