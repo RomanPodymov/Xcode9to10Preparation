@@ -7,7 +7,7 @@
 
 import Foundation
 
-#if swift(>=4.2)
+#if swift(>=3.4)
 #else
 public extension ArraySlice {
     public func allSatisfy(_ predicate: (Element) throws -> Bool) rethrows -> Bool {

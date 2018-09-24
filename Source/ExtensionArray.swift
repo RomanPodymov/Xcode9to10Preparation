@@ -5,7 +5,7 @@
 //  Created by Roman Podymov on 21.06.18.
 //
 
-#if swift(>=4.2)
+#if swift(>=3.4)
 #else
 public extension Array {
     public func allSatisfy(_ predicate: (Element) throws -> Bool) rethrows -> Bool {
