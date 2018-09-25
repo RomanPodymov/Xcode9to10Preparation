@@ -1,5 +1,5 @@
 PODS:
-  - Xcode9to10Preparation (0.0.19)
+  - Xcode9to10Preparation (0.0.21)
 
 DEPENDENCIES:
   - Xcode9to10Preparation (from `..`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ".."
 
 SPEC CHECKSUMS:
-  Xcode9to10Preparation: fa2490c5c0aeb61e6a49c74dd59959059d6c3b34
+  Xcode9to10Preparation: 1fd2841d07dff822e71bc7c459577ea9f9424b89
 
 PODFILE CHECKSUM: ebd33137fe93931dad939974f6ac2ecc596e537a
 

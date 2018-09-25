@@ -5,7 +5,8 @@
 //  Created by Roman Podymov on 21.06.18.
 //
 
-#if XCODE_9_ENVIRONMENT
+#if XCODE_10_ENVIRONMENT
+#else
 public extension Array {
     public func allSatisfy(_ predicate: (Element) throws -> Bool) rethrows -> Bool {
         return try !self.contains {
@@ -65,5 +66,4 @@ fileprivate extension Sequence {
         }
     }
 }
-#else
 #endif

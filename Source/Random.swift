@@ -5,7 +5,8 @@
 //  Created by Roman Podymov on 23.06.18.
 //
 
-#if XCODE_9_ENVIRONMENT
+#if XCODE_10_ENVIRONMENT
+#else
 import Darwin
 
 public protocol RandomNumberGenerator {
@@ -33,5 +34,4 @@ public struct Random: RandomNumberGenerator {
         return T(arc4random_uniform(UInt32(upperBound)))
     }
 }
-#else
 #endif

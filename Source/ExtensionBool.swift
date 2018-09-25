@@ -5,11 +5,11 @@
 //  Created by Roman Podymov on 21.06.18.
 //
 
-#if XCODE_9_ENVIRONMENT
+#if XCODE_10_ENVIRONMENT
+#else
 public extension Bool {
     public mutating func toggle() {
         self = !self
     }
 }
-#else
 #endif

@@ -5,7 +5,8 @@
 //  Created by Roman Podymov on 20.07.2018.
 //
 
-#if XCODE_9_ENVIRONMENT
+#if XCODE_10_ENVIRONMENT
+#else
 import Foundation
 
 public extension ArraySlice {
@@ -31,5 +32,4 @@ public extension ArraySlice {
         return try Array<Element>(self).starts(with: possiblePrefix, by: areEquivalent)
     }
 }
-#else
 #endif
