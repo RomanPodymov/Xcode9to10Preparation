@@ -14,7 +14,7 @@ Provides functions from Xcode 10 in Xcode 9.
 
 - iOS 8.0+ / tvOS 9.0+
 - Xcode 9.4+
-- Swift 4.1+
+- Swift 3.3+
 
 ## Installation
 
