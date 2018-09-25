@@ -325,81 +325,7 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		27DC44B4FD88CA444F49DF5C5F9BA855 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 861CD2BA10C5F1CDC66FE26129D6B1D4 /* Xcode9to10Preparation.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Xcode9to10Preparation/Xcode9to10Preparation-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Xcode9to10Preparation/Xcode9to10Preparation-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Xcode9to10Preparation/Xcode9to10Preparation.modulemap";
-				PRODUCT_MODULE_NAME = Xcode9to10Preparation;
-				PRODUCT_NAME = Xcode9to10Preparation;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.1;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		2F57884EA83C3AF08C97A3D9E9B8F993 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 861CD2BA10C5F1CDC66FE26129D6B1D4 /* Xcode9to10Preparation.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Xcode9to10Preparation/Xcode9to10Preparation-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Xcode9to10Preparation/Xcode9to10Preparation-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Xcode9to10Preparation/Xcode9to10Preparation.modulemap";
-				PRODUCT_MODULE_NAME = Xcode9to10Preparation;
-				PRODUCT_NAME = Xcode9to10Preparation;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 4.1;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8EB91921CAA02CEA9C7678CCC5728071 /* Release */ = {
+		34E1C1D2F27DE9E739088771C4179100 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B5A5215990CD9B9E302D772EF78A87E1 /* Pods-Example.release.xcconfig */;
 			buildSettings = {
@@ -430,8 +356,47 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) XCODE_9_ENVIRONMENT";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		717E2FF98BD04200055C5D195DCF3CA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 861CD2BA10C5F1CDC66FE26129D6B1D4 /* Xcode9to10Preparation.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Xcode9to10Preparation/Xcode9to10Preparation-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Xcode9to10Preparation/Xcode9to10Preparation-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Xcode9to10Preparation/Xcode9to10Preparation.modulemap";
+				PRODUCT_MODULE_NAME = Xcode9to10Preparation;
+				PRODUCT_NAME = Xcode9to10Preparation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) XCODE_9_ENVIRONMENT";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -562,7 +527,7 @@
 			};
 			name = Debug;
 		};
-		F454920E1F72BE6CB603D10E70991780 /* Debug */ = {
+		DA88325233F46C0FE85AD047DCF1A106 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 52EB128553BCCD0A43A7713241401647 /* Pods-Example.debug.xcconfig */;
 			buildSettings = {
@@ -593,8 +558,44 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) XCODE_9_ENVIRONMENT";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EB7AC51A929FA666235512B306FEB8EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 861CD2BA10C5F1CDC66FE26129D6B1D4 /* Xcode9to10Preparation.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Xcode9to10Preparation/Xcode9to10Preparation-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Xcode9to10Preparation/Xcode9to10Preparation-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Xcode9to10Preparation/Xcode9to10Preparation.modulemap";
+				PRODUCT_MODULE_NAME = Xcode9to10Preparation;
+				PRODUCT_NAME = Xcode9to10Preparation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) XCODE_9_ENVIRONMENT";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -616,8 +617,8 @@
 		D71E8CDA4ABDB3C7D8419C281A2F16D7 /* Build configuration list for PBXNativeTarget "Xcode9to10Preparation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				27DC44B4FD88CA444F49DF5C5F9BA855 /* Debug */,
-				2F57884EA83C3AF08C97A3D9E9B8F993 /* Release */,
+				EB7AC51A929FA666235512B306FEB8EE /* Debug */,
+				717E2FF98BD04200055C5D195DCF3CA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -625,8 +626,8 @@
 		E86D3199DEE7250C2811583B14FBA3DF /* Build configuration list for PBXNativeTarget "Pods-Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F454920E1F72BE6CB603D10E70991780 /* Debug */,
-				8EB91921CAA02CEA9C7678CCC5728071 /* Release */,
+				DA88325233F46C0FE85AD047DCF1A106 /* Debug */,
+				34E1C1D2F27DE9E739088771C4179100 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -5,10 +5,9 @@
 //  Created by Roman Podymov on 23.06.18.
 //
 
+#if XCODE_9_ENVIRONMENT
 import Darwin
 
-#if swift(>=3.4)
-#else
 public protocol RandomNumberGenerator {
     mutating func next() -> UInt64
 
@@ -34,4 +33,5 @@ public struct Random: RandomNumberGenerator {
         return T(arc4random_uniform(UInt32(upperBound)))
     }
 }
+#else
 #endif

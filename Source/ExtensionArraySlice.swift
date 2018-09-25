@@ -5,10 +5,9 @@
 //  Created by Roman Podymov on 20.07.2018.
 //
 
+#if XCODE_9_ENVIRONMENT
 import Foundation
 
-#if swift(>=3.4)
-#else
 public extension ArraySlice {
     public func allSatisfy(_ predicate: (Element) throws -> Bool) rethrows -> Bool {
         return try Array<Element>(self).allSatisfy(predicate)
@@ -32,4 +31,5 @@ public extension ArraySlice {
         return try Array<Element>(self).starts(with: possiblePrefix, by: areEquivalent)
     }
 }
+#else
 #endif
