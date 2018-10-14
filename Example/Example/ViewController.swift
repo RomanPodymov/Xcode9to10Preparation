@@ -37,6 +37,9 @@ class ViewController: UIViewController {
         
         let testingValue5 = [1, 10, 20, 5, 70, 90].starts(with: [1, 10, 20, 5, 70]) { $0 == $1 }
         print(testingValue5)
+        
+        let testingValue6 = [1:1, 2:2, 3:3, 4:4, 5:5].allSatisfy { $0.key == $0.value }
+        print(testingValue6)
     }
     
     private func testExtensionArraySlice() {

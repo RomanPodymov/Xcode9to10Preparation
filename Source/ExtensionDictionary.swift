@@ -9,7 +9,7 @@
 #else
 public extension Dictionary {
     func allSatisfy(_ predicate: ((key: Key, value: Value)) throws -> Bool) rethrows -> Bool {
-        return true
+        return try !self.contains { try !predicate($0) }
     }
 }
 #endif
