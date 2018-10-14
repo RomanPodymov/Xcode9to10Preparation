@@ -32,13 +32,15 @@ public extension Array {
             return try predicate($0.element)
         })?.offset
     }
-    
+
     public func lastIndex(where predicate: (Element) throws -> Bool) rethrows -> Int? {
-        let reversedArray = self.reversed()
-        guard let indexInReversedArray = try reversedArray.firstIndex(where: predicate) else {
+        let reversedArray = self.enumerated().reversed()
+        guard let lastItemOffset = try reversedArray.first(where: {
+            return try predicate($0.element)
+        })?.offset else {
             return nil
         }
-        return self.count - reversedArray.distance(from: reversedArray.startIndex, to: indexInReversedArray) - 1
+        return self.count - lastItemOffset - 1
     }
     
     public func starts<PossiblePrefix>(with possiblePrefix: PossiblePrefix, by areEquivalent: (Element, PossiblePrefix.Element) throws -> Bool) rethrows -> Bool where PossiblePrefix : Sequence {
