@@ -1,6 +1,6 @@
 {
   "name": "Xcode9to10Preparation",
-  "version": "0.0.22",
+  "version": "0.0.24",
   "summary": "Provides functions from Xcode 10 in Xcode 9",
   "deprecated": true,
   "description": "If you found some interesting functions, protocols, enumerations, classes or sctuctures in Xcode 10 you can use them right now in Xcode 9 with this library",
@@ -18,13 +18,14 @@
   },
   "source": {
     "git": "https://github.com/RomanPodymov/Xcode9to10Preparation.git",
-    "tag": "0.0.22"
+    "tag": "0.0.24"
   },
   "source_files": [
     "Source",
     "Source/**/*.{h,m}"
   ],
   "exclude_files": "Source/Exclude",
-  "swift_version": "4.1",
-  "requires_arc": true
+  "swift_versions": "4.1",
+  "requires_arc": true,
+  "swift_version": "4.1"
 }
